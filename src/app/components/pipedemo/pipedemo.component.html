@@ -1,0 +1,39 @@
+<div style="align-content: center">
+  <h4>Pipe Demo Component</h4>
+  <label>
+    Type Your message
+    <input type="text" [(ngModel)]="message">
+  </label>
+
+  <!--Title case-->
+  <p>
+    Message:{{message | titlecase}}
+  </p>
+
+  <!---Date Pipes-->
+  <p>
+    today is {{today | date:'dd-MMM-yyyy HH:mm'}}
+  </p>
+
+  <!--JSon Pipe-->
+  <p>
+    student is {{student | json}}
+  </p>
+
+  <!--Currency Pipe-->
+  <p>
+    Price is : {{price | currency:'EUR'}}
+  </p>
+
+  <!----Custom Pipe-->
+  <p>
+    Reverse is {{message | reverseText}}
+  </p>
+  
+  
+  <!---Pig Latin -->
+  <p>
+    Piglatin  is {{message | piglatin}}
+  </p>
+
+</div>

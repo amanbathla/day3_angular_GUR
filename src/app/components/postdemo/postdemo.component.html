@@ -1,0 +1,30 @@
+<div>
+  <h4>Post List</h4>
+
+  <p>
+    <button (click)="createPost()">
+      Create Post
+    </button>
+  </p>
+  <div>
+
+     <div class="card" *ngFor="let post of postList">
+        <div class="cardheader">
+          ID:{{post.id}}
+        </div>
+
+        <p>
+          Title <br>
+          {{post.title}}
+        </p>
+
+        <div class="card-body">
+          {{post.body}}
+        </div>
+     </div>
+  </div>
+
+<div>
+  <img src="" alt="Loading">
+</div>
+</div>

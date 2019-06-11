@@ -1,0 +1,29 @@
+<div id="child">
+  <p>
+    child works!
+  </p>
+
+  <div>
+    Parent Fav Dish is {{favDish}}
+  </div>
+
+
+  <div>
+    <h4>
+      Child Favourite Country is : {{childFavCountry}}
+    </h4>
+  </div>
+  <div>
+    Favourite Country
+    <input type="text" [(ngModel)]="favCountry">
+    &nbsp;
+    <button (click)="sendData2Parent()">send Data to Parent</button>
+  </div>
+  
+  <!-- <div>
+   {{customData.data1}}
+    {{customData.data2}
+     {{customData.data3}
+  </div> -->
+  
+</div> 
